@@ -17,8 +17,10 @@
         <spring.version>3.2.2.RELEASE</spring.version>
         <mail.version>1.4.7</mail.version>
         <junit.version>4.7</junit.version>
+        <testng.version>6.3.1</testng.version>
         <greenmail.version>1.5.2</greenmail.version>
         <dom4j.version>1.6.1</dom4j.version>
+        <captcha.version>2.3</captcha.version>
     </properties>
 
     <dependencies>
@@ -72,9 +74,21 @@
                 <version>1.2</version>
             </dependency>
             <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${testng.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
@@ -92,6 +106,12 @@
                 <artifactId>greenmail</artifactId>
                 <version>${greenmail.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.kaptcha</groupId>
+                <artifactId>kaptcha</artifactId>
+                <version>${captcha.version}</version>
+                <classifier>jdk15</classifier>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -22,12 +22,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="captcha" />
         <module name="email" />
         <module name="persist" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="account" target="1.5" />
+      <module name="captcha" target="1.5" />
       <module name="email" target="1.5" />
       <module name="labsystem" target="1.5" />
       <module name="persist" target="1.5" />
