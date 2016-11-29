@@ -14,7 +14,7 @@ import static org.junit.Assert.assertNotNull;
  * Created by qmcheng on 2016/11/21 0021.
  */
 public class AccountPersistServiceTest {
-    @Test
+
     public void testReadAccount() throws Exception{
         ApplicationContext context = new ClassPathXmlApplicationContext("persist-servlet.xml");
         AccountPersistService service = (AccountPersistService) context.getBean("accountPersistService");
