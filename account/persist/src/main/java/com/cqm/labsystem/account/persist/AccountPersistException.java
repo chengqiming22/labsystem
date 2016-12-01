@@ -7,4 +7,8 @@ public class AccountPersistException extends Exception {
     public AccountPersistException(Exception innerException){
         super(innerException);
     }
+
+    public AccountPersistException(String msg){
+        super(msg);
+    }
 }

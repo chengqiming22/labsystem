@@ -5,6 +5,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/account/persist" />
+    <file type="web" url="file://$PROJECT_DIR$/account/web" />
     <file type="web" url="file://$PROJECT_DIR$/test2" />
   </component>
   <component name="MavenProjectsManager">

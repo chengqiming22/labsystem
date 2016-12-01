@@ -1,0 +1,45 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="web:war exploded">
+    <output-path>$PROJECT_DIR$/account/web/target/labsystem-account-web-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="labsystem-account-service-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="service" />
+          </element>
+          <element id="archive" name="labsystem-account-persist-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="persist" />
+          </element>
+          <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
+          <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
+          <element id="archive" name="labsystem-account-email-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="email" />
+          </element>
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: javax.mail:mail:1.4.7" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="archive" name="labsystem-account-captcha-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="captcha" />
+          </element>
+          <element id="library" level="project" name="Maven: com.google.code.kaptcha:kaptcha:jdk15:2.3" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/account/web/target/labsystem-account-web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="web/web/Web" />
+    </root>
+  </artifact>
+</component>

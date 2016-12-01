@@ -18,12 +18,14 @@ public class AccountPersistServiceImpl implements AccountPersistService {
 
     public static final String ELEMENT_ROOT = "account-persist";
     public static final String ELEMENT_ACCOUNTS = "accounts";
+    public static final String ELEMENT_ACCOUNT = "account";
 
     private String file;
     private SAXReader reader = new SAXReader();
 
     private Document readDocument() throws AccountPersistException {
-        File dataFile = new File(getFile());
+        String dataUrl = getClass().getClassLoader().getResource(getFile()).getFile();
+        File dataFile = new File(dataUrl);
         if (!dataFile.exists()) {
             dataFile.getParentFile().mkdirs();
             Document doc = DocumentFactory.getInstance().createDocument();
@@ -32,7 +34,7 @@ public class AccountPersistServiceImpl implements AccountPersistService {
             writeDocument(doc);
         }
         try {
-            return reader.read(new File(getFile()));
+            return reader.read(new File(dataUrl));
         } catch (DocumentException e) {
             throw new AccountPersistException(e);
         }
@@ -41,7 +43,8 @@ public class AccountPersistServiceImpl implements AccountPersistService {
     private void writeDocument(Document document) throws AccountPersistException {
         Writer out = null;
         try {
-            out = new OutputStreamWriter(new FileOutputStream(getFile()));
+            String dataUrl = getClass().getClassLoader().getResource(getFile()).getFile();
+            out = new OutputStreamWriter(new FileOutputStream(dataUrl));
             XMLWriter writer = new XMLWriter(out, OutputFormat.createPrettyPrint());
             writer.write(document);
         } catch (IOException e) {
@@ -57,8 +60,21 @@ public class AccountPersistServiceImpl implements AccountPersistService {
         }
     }
 
-    public Account createAccount() throws AccountPersistException {
-        return null;
+    public Account createAccount(Account account) throws AccountPersistException {
+        if(readAccount(account.getId())!=null){
+            throw new AccountPersistException("same id exists.");
+        }
+
+        Document document = readDocument();
+        Element accountsElement = document.getRootElement().element(ELEMENT_ACCOUNTS);
+        Element element = accountsElement.addElement(ELEMENT_ACCOUNT);
+        element.addElement("id").addText(account.getId());
+        element.addElement("name").addText(account.getName());
+        element.addElement("email").addText(account.getEmail());
+        element.addElement("password").addText(account.getPassword());
+        element.addElement("activated").addText(String.valueOf(account.isActivated()));
+        writeDocument(document);
+        return readAccount(account.getId());
     }
 
     public Account readAccount(String id) throws AccountPersistException {
