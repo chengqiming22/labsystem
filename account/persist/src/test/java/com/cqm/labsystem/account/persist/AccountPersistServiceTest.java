@@ -1,11 +1,8 @@
 package com.cqm.labsystem.account.persist;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.io.File;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -16,7 +13,7 @@ import static org.junit.Assert.assertNotNull;
 public class AccountPersistServiceTest {
     @Test
     public void testCreateAccount() throws Exception{
-        ApplicationContext context = new ClassPathXmlApplicationContext("persist-servlet.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("account-persist.xml");
         AccountPersistService service = (AccountPersistService) context.getBean("accountPersistService");
 
         Account account= new Account();
@@ -32,7 +29,7 @@ public class AccountPersistServiceTest {
 
     @Test
     public void testReadAccount() throws Exception{
-        ApplicationContext context = new ClassPathXmlApplicationContext("persist-servlet.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("account-persist.xml");
         AccountPersistService service = (AccountPersistService) context.getBean("accountPersistService");
 
         Account account= service.readAccount("1");
