@@ -22,22 +22,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="captcha" />
-        <module name="email" />
-        <module name="persist" />
-        <module name="service" />
-        <module name="web" />
+        <module name="labsystem-client" />
+        <module name="labsystem-service" />
+        <module name="labsystem-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="account" target="1.5" />
-      <module name="captcha" target="1.5" />
-      <module name="email" target="1.5" />
       <module name="labsystem" target="1.5" />
-      <module name="persist" target="1.5" />
-      <module name="service" target="1.5" />
-      <module name="test2" target="1.5" />
-      <module name="web" target="1.5" />
+      <module name="labsystem-client" target="1.5" />
+      <module name="labsystem-service" target="1.5" />
+      <module name="labsystem-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

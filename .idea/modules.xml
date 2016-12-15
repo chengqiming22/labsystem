@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/account/account.iml" filepath="$PROJECT_DIR$/account/account.iml" />
-      <module fileurl="file://$PROJECT_DIR$/account/captcha/captcha.iml" filepath="$PROJECT_DIR$/account/captcha/captcha.iml" />
-      <module fileurl="file://$PROJECT_DIR$/account/email/email.iml" filepath="$PROJECT_DIR$/account/email/email.iml" />
       <module fileurl="file://$PROJECT_DIR$/labsystem.iml" filepath="$PROJECT_DIR$/labsystem.iml" />
-      <module fileurl="file://$PROJECT_DIR$/account/persist/persist.iml" filepath="$PROJECT_DIR$/account/persist/persist.iml" />
-      <module fileurl="file://$PROJECT_DIR$/account/service/service.iml" filepath="$PROJECT_DIR$/account/service/service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/account/web/web.iml" filepath="$PROJECT_DIR$/account/web/web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labsystem-client/labsystem-client.iml" filepath="$PROJECT_DIR$/labsystem-client/labsystem-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labsystem-service/labsystem-service.iml" filepath="$PROJECT_DIR$/labsystem-service/labsystem-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labsystem-web/labsystem-web.iml" filepath="$PROJECT_DIR$/labsystem-web/labsystem-web.iml" />
     </modules>
   </component>
 </project>
