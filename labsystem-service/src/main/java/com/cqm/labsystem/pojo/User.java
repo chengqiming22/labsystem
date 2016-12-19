@@ -1,14 +1,13 @@
-package com.cqm.labsystem.service.entities;
+package com.cqm.labsystem.pojo;
 
 /**
- * Created by qmcheng on 2016/12/15 0015.
+ * Created by qmcheng on 2016/12/19 0019.
  */
-public class Account {
+public class User {
     private String id;
     private String name;
     private String email;
     private String password;
-    private boolean activated;
 
     public String getId() {
         return id;
@@ -40,13 +39,5 @@ public class Account {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public boolean isActivated() {
-        return activated;
-    }
-
-    public void setActivated(boolean activated) {
-        this.activated = activated;
     }
 }

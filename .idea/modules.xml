@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/labsystem.iml" filepath="$PROJECT_DIR$/labsystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/labsystem-client/labsystem-client.iml" filepath="$PROJECT_DIR$/labsystem-client/labsystem-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labsystem-common/labsystem-common.iml" filepath="$PROJECT_DIR$/labsystem-common/labsystem-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/labsystem-service/labsystem-service.iml" filepath="$PROJECT_DIR$/labsystem-service/labsystem-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/labsystem-web/labsystem-web.iml" filepath="$PROJECT_DIR$/labsystem-web/labsystem-web.iml" />
     </modules>

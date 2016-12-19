@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="labsystem-client" />
+        <module name="labsystem-common" />
         <module name="labsystem-service" />
         <module name="labsystem-web" />
       </profile>
@@ -30,6 +31,7 @@
     <bytecodeTargetLevel>
       <module name="labsystem" target="1.5" />
       <module name="labsystem-client" target="1.5" />
+      <module name="labsystem-common" target="1.5" />
       <module name="labsystem-service" target="1.5" />
       <module name="labsystem-web" target="1.5" />
     </bytecodeTargetLevel>
