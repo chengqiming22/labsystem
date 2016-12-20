@@ -35,12 +35,12 @@
     <orderEntry type="library" name="Maven: com.google.guava:guava:15.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.0.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:4.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.0.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-core:4.0.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.0.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.12" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-lgpl:1.9.12" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-lgpl:1.9.12" level="project" />
